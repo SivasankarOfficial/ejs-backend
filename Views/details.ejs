@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h2>Id:<%= detail.id  %> </h2>
+    <h2><%= detail.name  %> </h2>
+    <h2><%= detail.comment  %> </h2>
+    <form method="POST" action="/likes/<%= detail.id  %>/delete?_method=DELETE">
+        <button>Delete</button><br><br>
+    </form>
+    
+    <a href="http://localhost:2000/likes/<%= detail.id %>/Edit ">Edit</a><br><br>
+    <a href="http://localhost:2000/likes ">Go to Likes Page</a>
+
+ 
+    
+</body>
+</html>

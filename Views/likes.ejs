@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+</head>
+<body>
+    <h1>Likes Page</h1>
+    <ol>
+    <% arr.map((ar)=>{%>
+        <li><strong><%= ar.name %></strong>-<%=ar.comment  %> <a href="http://localhost:2000/likes/<%= ar.id  %>" >details</a> </li>
+   <% })  %> </ol>
+   <a href="http://localhost:2000/comments ">Go To Comment</a>
+   
+
+    
+</body>
+</html>
